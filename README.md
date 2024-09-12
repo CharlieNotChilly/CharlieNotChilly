@@ -4,19 +4,19 @@
     <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=500&height=70&duration=4000&lines=Hi+There!+👋;+I'm+Charlie+Zhang!;" />
 </h1>
 
-<h3 align="center">A passionate software developer from Canada 🇨🇦</h3>
+<h3 align="center">A passionate CS student from University of Waterloo</h3>
 
 <br/>
 
 <div align="center">
  
- 🔭 I’m currently **looking for an internship**
+ 🔭 I’m currently **Looking For an Internship**
  
  🌱 I’m currently learning **C++, Docker, AWS, Azure**
 
-💬 Ask me about **Node.js, React, Firebase... or anything [here](https://github.com/salesp07/salesp07/issues)**
+💬 Ask me about **Javascript, Typescript, MERN, Java, PostgresQL...**
 
-⚡ Fun fact **Game of Thrones Night's Watch cloaks are made from Ikea rugs**
+⚡ Fun fact **Yes Im looking for an internship :)**
 
  </div>
  
