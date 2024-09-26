@@ -16,7 +16,7 @@
 
 💬 Ask me about **Javascript, Typescript, MERN, Java, PostgresQL...**
 
-⚡ Fun fact **Yes Im looking for an internship :)**
+⚡ Fun fact **Yes Im looking for an internship and dont forfeit ur GPA:)**
 
  </div>
  
