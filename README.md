@@ -11,10 +11,10 @@
 ### About me
 
 - 🎓 Computer Science at the **University of Waterloo** (class of 2028)
-- 💼 Software Developer Intern, Generative AI\* at **D2L**: cut failed LLM generations by 60%‡, built a 221‡-case prompt-evaluation gate in CI, and led 6‡ co-ops taking a Grade Planner and Study Widgets to production for early 2027
+- 💼 Software Developer Intern at **D2L**: cut failed LLM generations by 60%‡, built a 221‡-case prompt-evaluation gate in CI, and led 6‡ co-ops taking a Grade Planner and Study Widgets to production for early 2027
 - 🧭 Previously full-stack at **The Traveller**: a generative-AI proposal engine that cut drafting from 8 hours to 20 minutes, and Microsoft Entra ID SSO for 50+ staff
 - 🔧 I care about correctness under load: idempotency, crash recovery, and numbers I can reproduce
-- 🏋️ Powerlifter outside of code
+- 🏋️ Powerlifter outside of code****
 
 ### Featured projects
 
