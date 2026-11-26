@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=30&center=true&vCenter=true&width=640&height=60&duration=3500&pause=800&color=58A6FF&lines=Hi%2C+I'm+Charlie+%F0%9F%91%8B;CS+%40+University+of+Waterloo;I+build+systems+that+don't+break+under+load" alt="Typing intro" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=30&center=true&vCenter=true&width=640&height=60&duration=3500&pause=800&color=58A6FF&lines=Hi%2C+I'm+Charlie+%F0%9F%91%8B;CS+%40+University+of+Waterloo;Building+systems+that+hold+up" alt="Typing intro" />
 </h1>
 
 <p align="center">
@@ -16,11 +16,19 @@
 
 ### Featured projects
 
-| Project | What it is | Highlights |
-|---|---|---|
-| ⚡ [**Flashpoint**](https://github.com/CharlieNotChilly/Flash-Point) | Flash-sale checkout engine<br/>`Rails` `Redis Lua` `Sidekiq` `PostgreSQL` `k6` | 5,000 simultaneous buyers on 1,000 units: **exactly 1,000 orders, 0 oversold**. Atomic Lua reservations, idempotency keys, and a reconciler for lost jobs, all covered in CI |
-| 📦 [**Shelfwise**](https://github.com/CharlieNotChilly/Shelfwise) | Inventory forecasting for Shopify merchants<br/>`Python` `LightGBM` `FastAPI` `Rails` | Cut forecast error (WAPE) from **73.6% to 63.4%** vs. a moving-average baseline on 500 SKUs × 52 weeks, with no future-data leakage. Shopify app in progress |
-| 📈 [**LineValue**](https://github.com/CharlieNotChilly/Line-Value) | Real-time odds analytics platform<br/>`asyncio` `Redis Streams` `PostgreSQL` `React` | 🚧 In design: at-least-once ingestion with idempotent writes and a leak-proof closing-line backtest. Spec and build plan in the repo |
+#### ⚡ [Flashpoint](https://github.com/CharlieNotChilly/Flash-Point): flash-sale checkout engine
+`Ruby on Rails` `Redis Lua` `Sidekiq` `PostgreSQL` `k6` `Docker`
+- 5,000 simultaneous buyers on 1,000 units: **exactly 1,000 orders, 0 oversold**
+- Atomic Lua reservations, idempotency keys, and a reconciler that recovers lost jobs, all tested in CI
+
+#### 📦 [Shelfwise](https://github.com/CharlieNotChilly/Shelfwise): inventory forecasting for Shopify merchants
+`Python` `LightGBM` `FastAPI` `Ruby on Rails`
+- Cut forecast error (WAPE) from **73.6% to 63.4%** vs. a moving-average baseline on 500 SKUs × 52 weeks, with no future-data leakage
+- Shopify app in progress
+
+#### 📈 [LineValue](https://github.com/CharlieNotChilly/Line-Value): real-time odds analytics platform
+`asyncio` `Redis Streams` `PostgreSQL` `React`
+- 🚧 In design: at-least-once ingestion with idempotent writes and a leak-proof closing-line backtest (spec and build plan in the repo)
 
 ### Tech I use
 
