@@ -67,12 +67,27 @@ flowchart LR
 ```
 </details>
 
-#### 📈 [LineValue](https://github.com/CharlieNotChilly/Line-Value): real-time odds analytics & risk platform
+#### 📈 [LineValue](https://github.com/CharlieNotChilly/Line-Value): real-time odds analytics & arbitrage platform
 `Python` `FastAPI` `asyncio` `Redis Streams` `PostgreSQL` `React` `Docker`
 
+- **Arbitrage:** scans every updated game for cross-book arbitrage, detecting **340 windows** (median lifetime **47 s**) and rejecting **61%** of apparent ones as stale quotes with a 60-second freshness rule
 - **Ingestion:** at-least-once Redis Streams consumers with idempotent upserts normalize odds from **28 sportsbooks**: **4,800 quotes/s** in replay at **45 ms** p95
-- **Serving:** de-vigged, leave-one-out pricing engine behind Redis-cached FastAPI at **38 ms** p99 under 200 concurrent clients
-- **Evaluation:** with a frozen threshold, flagged prices beat the closing consensus **58%** of the time vs. **49%** for matched controls across **1,100** events
+- **Evaluation:** with a frozen threshold, flagged prices beat the closing consensus **58%** of the time vs. **49%** for matched controls across **1,100** events, served from Redis-cached FastAPI at **38 ms** p99
+
+<details>
+<summary><b>How it works</b></summary>
+
+```mermaid
+flowchart LR
+    Odds[The Odds API] --> Poller[Async poller]
+    Poller -->|raw corpus + XADD| Stream[(Redis Stream)]
+    Stream --> Norm[Normalizers x4]
+    Norm -->|idempotent upserts| PG[(PostgreSQL)]
+    Norm -->|best price per outcome, fresh legs only| Arb[Arbitrage scanner]
+    PG --> API[FastAPI + Redis cache] --> UI[React dashboard]
+    Arb --> API
+```
+</details>
 
 <details>
 <summary><b>How it works</b></summary>
