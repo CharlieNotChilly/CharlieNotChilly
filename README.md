@@ -89,18 +89,6 @@ flowchart LR
 ```
 </details>
 
-<details>
-<summary><b>How it works</b></summary>
-
-```mermaid
-flowchart LR
-    Odds[The Odds API] --> Poller[Async poller]
-    Poller -->|raw corpus + XADD| Stream[(Redis Stream)]
-    Stream --> Norm[Normalizers x4]
-    Norm -->|idempotent upserts| PG[(PostgreSQL)]
-    PG --> API[FastAPI + Redis cache] --> UI[React dashboard]
-```
-</details>
 
 ---
 
