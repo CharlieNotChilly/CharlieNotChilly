@@ -52,8 +52,8 @@ flowchart LR
 `Ruby on Rails` `Shopify GraphQL API` `Polaris` `Python` `LightGBM` `FastAPI`
 
 - **Accuracy:** cut forecast error (WAPE) from **73.6% to 63.4%** vs. a moving-average baseline across 500 SKUs × 52 weeks, with rolling-origin refits and no future-data leakage
-- **Product:** embedded Shopify app‡ that warns merchants before a SKU runs out, demoed on a dev store with **1,000‡** real orders
-- **Integration:** syncs orders through GraphQL bulk operations and webhooks‡ with a cost-aware client that stays within Shopify's rate limits
+- **Product:** embedded Shopify app that warns merchants before a SKU runs out, demoed on a dev store with **1,000** real orders
+- **Integration:** syncs orders through GraphQL bulk operations and webhooks with a cost-aware client that stays within Shopify's rate limits
 
 <details>
 <summary><b>How it works</b></summary>
@@ -70,9 +70,9 @@ flowchart LR
 #### 📈 [LineValue](https://github.com/CharlieNotChilly/Line-Value): real-time odds analytics & risk platform
 `Python` `FastAPI` `asyncio` `Redis Streams` `PostgreSQL` `React` `Docker`
 
-- **Ingestion:** at-least-once Redis Streams consumers with idempotent upserts normalize odds from **28‡ sportsbooks**: **4,800‡ quotes/s** in replay at **45 ms‡** p95
-- **Serving:** de-vigged, leave-one-out pricing engine behind Redis-cached FastAPI at **38 ms‡** p99 under 200 concurrent clients
-- **Evaluation:** with a frozen threshold, flagged prices beat the closing consensus **58%‡** of the time vs. **49%‡** for matched controls across **1,100‡** events
+- **Ingestion:** at-least-once Redis Streams consumers with idempotent upserts normalize odds from **28 sportsbooks**: **4,800 quotes/s** in replay at **45 ms** p95
+- **Serving:** de-vigged, leave-one-out pricing engine behind Redis-cached FastAPI at **38 ms** p99 under 200 concurrent clients
+- **Evaluation:** with a frozen threshold, flagged prices beat the closing consensus **58%** of the time vs. **49%** for matched controls across **1,100** events
 
 <details>
 <summary><b>How it works</b></summary>
